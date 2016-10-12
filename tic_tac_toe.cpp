@@ -1,13 +1,13 @@
 #include <iostream>
 
 using namespace std;
-
 char game_matrix[3][3] = { '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+char matrix[3][3];
 char player = 'X';
 
 void draw_game_matrix()
 {
-	system("cls");
+	//system("cls");
 	cout << "Tic Tac Toe Game" << endl;
 	for (int i = 0; i < 3; i++)
 	{
@@ -100,6 +100,7 @@ char winner()
 
 int main()
 {
+	
 	draw_game_matrix();
 	while (1)
 	{
@@ -117,6 +118,6 @@ int main()
 		}
 		toggle_player();
 	}
-	system("pause");
+	//system("pause");
 	return 0;
 }
